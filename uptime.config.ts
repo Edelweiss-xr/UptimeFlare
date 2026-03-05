@@ -7,11 +7,12 @@ const pageConfig: PageConfig = {
   links: [
     { link: 'https://ignorant.top/', label: 'Blog', highlight: true },
     { link: 'https://filecodebox.ignorant.top/#/', label: 'filecodebox' },
-    { link: 'https://easyimage.ignorant.top/', label: 'easyimage' },
+    { link: 'https://openlist.ignorant.top/', label: 'OpenList' },
   ],
   // 对监控项进行分组显示
   group: {
-    '🌐 Ignorant的网站': ['ignorant_blog', 'ignorant_filecodebox', 'ignorant_easyimage'],
+    '🌐 Ignorant的博客': ['ignorant_blog', ],
+    '📚 资源存储': ['ignorant_openlist','ignorant_filecodebox', ],
   },
   maintenances: {
     upcomingColor: 'gray',
@@ -50,14 +51,14 @@ const workerConfig: WorkerConfig = {
         'User-Agent': 'Uptimeflare',
       },
     },
-    // 3. EasyImage 监控项
+    // 3. OpenList 监控项
     {
-      id: 'ignorant_easyimage',
-      name: 'EasyImage',
+      id: 'ignorant_openlist',
+      name: 'OpenList',
       method: 'GET',
-      target: 'https://easyimage.ignorant.top/',
-      tooltip: '简单图床',
-      statusPageLink: 'https://easyimage.ignorant.top/',
+      target: 'https://openlist.ignorant.top/',
+      tooltip: 'OpenList',
+      statusPageLink: 'https://openlist.ignorant.top/',
       timeout: 10000,
       headers: {
         'User-Agent': 'Uptimeflare',
