@@ -25,12 +25,12 @@ const workerConfig: WorkerConfig = {
   monitors: [
     // 1. 博客监控项
     {
-      id: 'ignorant_blog',
-      name: 'Ignorant的博客',
+      id: 'Edelweiss_blog',
+      name: 'Edelweiss的博客',
       method: 'GET',
-      target: 'https://ignorant.top',
+      target: 'https://edelweiss.de5.net',
       tooltip: '博客主页',
-      statusPageLink: 'https://ignorant.top',
+      statusPageLink: 'https://edelweiss.de5.net',
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
